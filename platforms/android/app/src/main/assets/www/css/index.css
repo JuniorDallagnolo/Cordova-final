@@ -1,0 +1,161 @@
+@charset 'utf-8';
+/**********************************
+        DEFAULTS
+**********************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: BlinkMacSystemFont, -apple-system, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(../img/bgleft.jpg);
+}
+
+/**********************************
+        LAYOUT
+**********************************/
+
+.page {
+  transform: translateX(-200%);
+  width: 100%;
+  padding: 5rem 0 2rem 0;
+  transition: transform 0.5s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.page.active {
+  transform: translateX(0);
+}
+
+.page header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.3rem;
+  padding: 0 2rem;
+  border-bottom: 0.3rem solid #333;
+  background-color: #000;
+  color: #EEE;
+}
+
+.page header > h1 {
+  font-size: 2rem;
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.logo {
+  width: 140px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.summary {
+  font-size: 0.8rem;
+  text-indent: 5%;
+  padding: 2%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+table caption {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  margin: auto;
+}
+
+th,
+td {
+  font-size: 0.8rem;
+  border: 1px solid #BBB;
+  text-align: center;
+  padding: 0 5px;
+}
+
+/**********************************
+        LIST PAGE
+**********************************/
+
+.item-card {
+  margin: 1rem 2rem;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 2px #ddd;
+  overflow: auto;
+  background-color: #eee;
+}
+
+.item-card img {
+  float: left;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  width: auto;
+  height: 8rem;
+}
+
+.item-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  margin-left: 0.5rem;
+  color: #222;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.item-title:hover {
+  color: orange;
+}
+
+.item-desc {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.2rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  margin-left: 0.5rem;
+  color: #222;
+  height: 3.6rem;
+  text-overflow: clip;
+  overflow: hidden;
+}
+#secondary {
+  background-image: url(../img/bgright.jpg);
+  color: #BBB;
+}
+
+/**********************************
+        DETAILS PAGE
+**********************************/
+
+.back-btn {
+  color: #fff;
+  margin-right: 2rem;
+}
+
+.back-btn:hover {
+  color: orange;
+}
+
+/**********************************
+        ANIMATIONS
+**********************************/

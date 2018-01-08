@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ca.edumedia.dall0078.first" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>dall0078</name>
+    <description>
+    A Character Database of Dota 2 Heroes with background information and stats in a table format.
+  </description>
+    <author email="dall0078@algonquinlive.com" href="http://dall0078.edumedia.ca">
+    Ernilo Dallagnolo Junior
+  </author>
+    <content src="index.html" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="ldpi" src="res/icon/android/ldpi.png" />
+        <icon density="mdpi" src="res/icon/android/mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
+        <icon density="xxhdpi" src="res/icon/android/xxhdpi.png" />
+        <icon density="xxxhdpi" src="res/icon/android/xxxhdpi.png" />
+        <splash density="land-ldpi" src="res/screen/android/splash-ldpi-landscape.png" />
+        <splash density="land-mdpi" src="res/screen/android/splash-mdpi-landscape.png" />
+        <splash density="land-hdpi" src="res/screen/android/slpash-hdpi-landscape.png" />
+        <splash density="land-xhdpi" src="res/screen/android/splash-xhdpi-landscape.png" />
+        <splash density="land-xxhdpi" src="res/screen/android/splash-xxhdpi-landscape.png" />
+        <splash density="land-xxxhdpi" src="res/screen/android/splash-xxxhdpi-landscape.png" />
+        <splash density="port-ldpi" src="res/screen/android/splash-ldpi-portrait.png" />
+        <splash density="port-mdpi" src="res/screen/android/splash-mdpi-portrait.png" />
+        <splash density="port-hdpi" src="res/screen/android/splash-hdpi-portrait.png" />
+        <splash density="port-xhdpi" src="res/screen/android/splash-xhdpi-portrait.png" />
+        <splash density="port-xxhdpi" src="res/screen/android/splash-xxhdpi-portrait.png" />
+        <splash density="port-xxxhdpi" src="res/screen/android/splash-xxxhdpi-portrait.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <plugin name="cordova-plugin-splashscreen" spec="^5.0.1" />
+    <engine name="android" spec="^7.0.0" />
+</widget>
